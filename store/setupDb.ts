@@ -185,7 +185,6 @@ export async function signInUserDB ({ username, password }: Pick<INewUser, "user
     }
     /* create table */
     db.transaction((tx) => {
-      console.log("username:", username);
       tx.executeSql(
         "SELECT * from users WHERE username = ?;",
         [username],

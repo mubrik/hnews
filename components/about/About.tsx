@@ -11,7 +11,7 @@ export default function About (props: IAboutScreenProps) {
   const darkMode = useDarkMode();
 
   return (
-    <View style={{flex: 1, flexDirection: 'column', justifyContent: 'center'}}>
+    <View style={{flex: 1, flexDirection: 'column', justifyContent: 'center', paddingHorizontal: 8}}>
       <Text variant="headlineLarge" style={styles.text}> Welcome to Hacker News </Text>
       <Text variant="labelLarge" style={styles.text}> Latest News at your Fingertip </Text>
       <View style={{marginTop: 30, alignItems: 'center'}}>

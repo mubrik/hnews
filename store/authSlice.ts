@@ -35,7 +35,6 @@ const authSlice = createSlice({
   initialState: getAuthInit,
   reducers: {
     authSignIn(state, action: ISignInAction) {
-      console.log("reducer sign in", action);
       return {
         ...state,
         isAuthenticated: true,
